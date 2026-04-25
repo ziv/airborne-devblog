@@ -1,7 +1,6 @@
 hugo
-rm -rf ../docs
-mv public ../docs
 
-sed -i '' 's#"../fonts/#"./fonts/#g' ../docs/styles.css
+sed -i '' 's#"../fonts/#"./fonts/#g' ./public/styles.css
 
-cp -r ../builder ../docs/builder
+rm -rf ../airborne/docs
+cp -r public ../airborne/docs
